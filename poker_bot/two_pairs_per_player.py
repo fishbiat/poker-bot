@@ -27,15 +27,15 @@ def two_pairs_per_player(players):
 
                 # If the cards are equal 
                 if compare_card_x == compare_card_y:
-                # Then add the pair to the bucket of two pairs for that player 
-                # BUT we ONLY need the face value, not both cards
+                    # Then add the pair to the bucket of two pairs for that player 
+                    # BUT we ONLY need the face value, not both cards
 
-                # We will use pair_simplifier(pair) to extract the face value
-                face_value = pair_simplifier(F"{compare_card_x} {compare_card_y}")
-                number_of_two_pair[k].append(face_value)
-                
-                # Print out the actual pairs for human readable
-                print(F"Match is found!: Player {k}: {compare_card_x} {compare_card_y}")
+                    # We will use pair_simplifier(pair) to extract the face value
+                    face_value = pair_simplifier(F"{compare_card_x} {compare_card_y}")
+                    number_of_two_pair[k].append(face_value)
+                    
+                    # Print out the actual pairs for human readable
+                    print(F"Match is found!: Player {k}: {compare_card_x} {compare_card_y}")
             
         # Return a value
 
