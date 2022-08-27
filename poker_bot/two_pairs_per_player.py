@@ -19,24 +19,24 @@ def two_pairs_per_player(players):
         
         # Also goes through each players cards
         # So that we can compare each card to each other
-        for j in range(i+1,8):
-            
-            # Compare each cards
-            compare_card_x = list(players[k][i-1])[0]
-            compare_card_y = list(players[k][j-1])[0]
+            for j in range(i+1,8):
+                
+                # Compare each cards
+                compare_card_x = list(players[k][i-1])[0]
+                compare_card_y = list(players[k][j-1])[0]
 
-            # If the cards are equal 
-            if compare_card_x == compare_card_y:
-            # Then add the pair to the bucket of two pairs for that player 
-            # BUT we ONLY need the face value, not both cards
+                # If the cards are equal 
+                if compare_card_x == compare_card_y:
+                # Then add the pair to the bucket of two pairs for that player 
+                # BUT we ONLY need the face value, not both cards
 
-            # We will use pair_simplifier(pair) to extract the face value
-            face_value = pair_simplifier(F"{compare_card_x} {compare_card_y}")
-            number_of_two_pair[k].append(face_value)
+                # We will use pair_simplifier(pair) to extract the face value
+                face_value = pair_simplifier(F"{compare_card_x} {compare_card_y}")
+                number_of_two_pair[k].append(face_value)
+                
+                # Print out the actual pairs for human readable
+                print(F"Match is found!: Player {k}: {compare_card_x} {compare_card_y}")
             
-            # Print out the actual pairs for human readable
-            print(F"Match is found!: Player {k}: {compare_card_x} {compare_card_y}")
-        
         # Return a value
 
     return number_of_two_pair
