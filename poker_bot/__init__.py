@@ -1,3 +1,5 @@
+import random
+
 from .pair_simplifier import pair_simplifier
 from .checking_who_won_two_pair_scenario import checking_who_won_two_pair_scenario
 from .two_pairs_per_player import two_pairs_per_player
