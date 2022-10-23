@@ -1,3 +1,5 @@
+import poker_bot.pair_simplifier
+
 def two_pairs_per_player(players):
         
     # Create a bucket of buckets:
