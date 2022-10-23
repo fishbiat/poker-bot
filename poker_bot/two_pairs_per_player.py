@@ -28,8 +28,8 @@ def two_pairs_per_player(players):
                 compare_card_x = ''.join(c for c in list(players[k][i-1])[:-1])
                 compare_card_y = ''.join(c for c in list(players[k][j-1])[:-1])
 
-                print(compare_card_x)
-                print(compare_card_y)
+#                 print(compare_card_x)
+#                 print(compare_card_y)
 
                 # If the cards are equal 
                 if compare_card_x == compare_card_y:
