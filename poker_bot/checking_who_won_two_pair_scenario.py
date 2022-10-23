@@ -1,4 +1,4 @@
-def checking_who_won_two_pair_scenario(number_of_two_pair):
+def checking_who_won_two_pair_scenario(players, number_of_two_pair):
 
     # When we start off, we haven't seen any pairs, so 
     # the highest we have seen starts at 0
