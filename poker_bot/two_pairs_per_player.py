@@ -1,4 +1,4 @@
-import poker_bot.pair_simplifier
+import poker_bot.pair_simplifier as pair_simplifier
 
 def two_pairs_per_player(players):
         
