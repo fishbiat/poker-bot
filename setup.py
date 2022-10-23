@@ -8,7 +8,7 @@ setup(name='poker_bot',
       author_email='none@example.com',
       install_requires=[
          'random'
-      ]
+      ],
       license='Apache',
       packages=['poker_bot'],
       zip_safe=False)
