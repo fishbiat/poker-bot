@@ -6,6 +6,9 @@ setup(name='poker_bot',
       url='https://github.com/fishbiat/poker-bot',
       author='Fishbiat',
       author_email='none@example.com',
+      install_requires=[
+         'random'
+      ]
       license='Apache',
       packages=['poker_bot'],
       zip_safe=False)
