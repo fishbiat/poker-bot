@@ -25,8 +25,8 @@ def two_pairs_per_player(players):
                 
                 # Compare each cards
 
-                compare_card_x =  list(players[k][i-1]).pop()
-                compare_card_y = list(players[k][j-1]).pop()
+                compare_card_x =  list(players[k][i-1])[:-1]
+                compare_card_y = list(players[k][j-1])[:-1]
 
                 print(compare_card_x)
                 print(compare_card_y)
