@@ -24,10 +24,13 @@ def two_pairs_per_player(players):
             for j in range(i+1,8):
                 
                 # Compare each cards
-                compare_card_x = list(players[k][i-1])[0]
-                compare_card_y = list(players[k][j-1])[0]
-                print(compare_card_x)
-                print(compare_card_y)
+
+#                 compare_card_x =  list(players[k][i-1])[0]
+#                 compare_card_y = list(players[k][j-1])[0]
+                
+                compare_card_x = ''.join(c for c in players[k][i-1] if c.isdigit())
+                compare_card_y = ''.join(c for c in players[k][j-1] if c.isdigit())
+
 
                 # If the cards are equal 
                 if compare_card_x == compare_card_y:
