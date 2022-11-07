@@ -3,6 +3,8 @@
 # Code for a simple pygame application that displays a pair of cards
 # and allows the user to flip them over to see if they match.
 
+# https://stackoverflow.com/questions/47639826/pygame-button-single-click
+
 import pygame
 import random
 
@@ -25,11 +27,13 @@ class Card:
         self.card_suite = card_suite
         self.name = F"{card_value}_of_{card_suite}"
         self.image = pygame.image.load(F"../assets/PNG-cards-1.3/{self.name}.png")
+        self.back_image = pygame.image.load(F"../assets/Card_back_01.svg.png")
         self.image = pygame.transform.scale(self.image, (100, 150))
+        self.back_image = pygame.transform.scale(self.back_image, (100, 150))
         self.rect = self.image.get_rect()
         self.rect.x = position_x
         self.rect.y = position_y
-        self.face_up = True
+        self.face_up = False
 
     def flip(self):
         self.face_up = not self.face_up
@@ -38,7 +42,7 @@ class Card:
         if self.face_up:
             screen.blit(self.image, self.rect)
         else:
-            pygame.draw.rect(screen, BLACK, self.rect)
+            screen.blit(self.back_image, self.rect)
 
     def __str__(self):
         return self.name
@@ -74,6 +78,8 @@ screen.fill(POKER_GREEN)
 card1 = Card("2", "clubs", position_x, position_y)
 position_x += 110
 card2 = Card("5", "diamonds", position_x, position_y)
+
+#card2.flip()
 
 
 # image1 = pygame.image.load('PNG-cards-1.3/2_of_clubs.png')
