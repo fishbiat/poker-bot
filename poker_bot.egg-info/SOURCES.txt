@@ -13,5 +13,9 @@ poker_bot/functions/create_players.py
 poker_bot/functions/deal_a_card.py
 poker_bot/functions/pair_simplifier.py
 poker_bot/functions/two_pairs_per_player.py
+poker_bot/pygame/__init__.py
+poker_bot/pygame/card.py
+poker_bot/pygame/colors.py
+poker_bot/pygame/convert.py
 pygame/__init__.py
 pygame/two-pair-game.py
