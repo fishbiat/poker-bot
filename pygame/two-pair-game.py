@@ -8,6 +8,15 @@
 import pygame
 import random
 
+# import sys, os
+# sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'Common'))
+import poker_bot.functions as pb
+
+#help(poker_bot)
+
+deck_of_cards = pb.create_deck_of_cards()
+
+
 position_x = 10
 position_y = 100
 
