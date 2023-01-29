@@ -8,7 +8,7 @@ def two_pairs_per_player(players):
     
     # Loop through each of the players 
     for k in range(1, len(players) + 1):
-
+        # print(F"k: {k}")
         # Initiate the bucket first
         # Put an empty bucket in the back of the pickup truck for each player
         number_of_two_pair[k] = []
@@ -18,11 +18,11 @@ def two_pairs_per_player(players):
         # because by the time we get to the 7th card, we've compared 
         # all cards
         for i in range(1, 7):
-        
+            # print(F"i: {i}")
         # Also goes through each players cards
         # So that we can compare each card to each other
             for j in range(i+1,8):
-                
+                # print(F"j: {j}")
                 # Compare each cards
 
                 compare_card_x = ''.join(c for c in list(players[k][i-1])[:-1])

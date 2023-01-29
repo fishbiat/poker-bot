@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HuriahTron 3000</title>
+</head>
+<body>
+    <h1>Huriahtron 3000</h1>
+    <h3>Two Pair Poker</h3>
+
+    <table>
+        <tr>
+            <h4>Common Cards</h4>
+            {% for i in ccimgs %}
+                <img src="{{i}}" width="100px">
+            {% endfor %}
+        </tr>
+        <tr>
+            <th>Player 1</th>
+            <th></th>
+            <th>Player 2</th>
+        </tr>
+        <tr>
+
+            <th>
+                {% for i in p1imgs %}
+                <img src="{{i}}" width="100px">
+                {% endfor %}
+            </th>
+            <th>
+                ------------
+            </th>
+            <th>
+                {% for i in p2imgs %}
+                <img src="{{i}}" width="100px">
+                {% endfor %}
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <center>Player 1 two pairs</center>
+            </th>
+            <th>
+                ------------
+            </th>
+            <th>
+                <center>Player 2 two pairs</center>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <center>{{number_of_two_pair[1]}}</center>
+            </th>
+            <th>
+                ------------
+            </th>
+            <th>
+                <center>{{number_of_two_pair[2]}}</center>
+            </th>
+        </tr>
+    </table>
+    
+    <br>
+
+    <h3>
+        Winner(s): {{winner}}
+    </h3>
+
+
+</body>
+</html>

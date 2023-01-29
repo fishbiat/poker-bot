@@ -1,10 +1,8 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.1
 Name: poker-bot
 Version: 0.2
 Summary: PokerBot
-Home-page: UNKNOWN
 Author: Fishbiat
 Author-email: none@example.com
 License: Apache
-Description: UNKNOWN
-Platform: UNKNOWN
+License-File: LICENSE
