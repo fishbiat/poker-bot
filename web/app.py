@@ -42,10 +42,6 @@ def get_card_images(card_array):
     return cimgs
 
 @app.route('/')
-def root():
-    return "/two_pair"
-
-@app.route('/two_pair')
 def two_pair():
      # Create a deck of cards and 2 players
     deck_of_cards = pb.create_deck_of_cards()
@@ -94,4 +90,6 @@ def two_pair():
                            number_of_two_pair=number_of_two_pair,
                            winner=winner)
 
-app.run(host='0.0.0.0', port=8080, debug=True)
+# app.run(host='0.0.0.0',
+#         #port=8080,
+#         debug=True)

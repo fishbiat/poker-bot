@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HuriahTron 3000</title>
+    <body style="background-color:#35654d;"></body>
 </head>
 <body>
     <h1>Huriahtron 3000</h1>
@@ -58,14 +59,28 @@
                 <center>{{number_of_two_pair[2]}}</center>
             </th>
         </tr>
+        <tr>
+            <th>
+                {% if 1 in winner %}
+                    <img src="checkmark.png" width="100px"></img>
+                {% else %}
+                    <img src="xmark.png" width="100px"></img>
+                {% endif %}
+            </th>
+            <th>
+                ------------
+            </th>
+            <th>
+                {% if 2 in winner %}
+                    <img src="checkmark.png" width="100px"></img>
+                {% else %}
+                    <img src="xmark.png" width="100px"></img>
+                {% endif %}
+            </th>
+        </tr>
     </table>
-    
-    <br>
 
-    <h3>
-        Winner(s): {{winner}}
-    </h3>
-
+    <img src="robot.png" width="500px"></img>
 
 </body>
 </html>

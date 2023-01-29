@@ -1,9 +1,33 @@
-# Poker Bot 3000
+# Huriahtron 3000
 
 Code for making a Python-based Poker bot, educational purposes only. 
 
 ## Using
 
-### PyGame
+### Flask
 
-This code can be used as a lib in another code-base or as a standalone pygame applicaion.
+In the main directory run:
+
+```
+pip install -r requirements
+```
+
+and 
+
+```
+python setup.py install
+```
+
+Then run `python wsgi.py` and you should find the page in your web browser at [http://localhost:8080](http://localhost:8080).
+
+# Docker
+
+```
+docker build . -t poker
+```
+
+```
+docker run -p 8080:8080 poker
+```
+
+[http://localhost:8080](http://localhost:8080)
