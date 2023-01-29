@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 import poker_bot.functions as pb
 
 app = Flask(__name__,
@@ -42,7 +42,12 @@ def get_card_images(card_array):
     return cimgs
 
 @app.route('/')
-def two_pair():
+def front_page():
+    #return render_template('index.html')
+    return redirect(url_for('pair_poker'))
+
+@app.route('/pair_poker')
+def pair_poker():
      # Create a deck of cards and 2 players
     deck_of_cards = pb.create_deck_of_cards()
     players = pb.create_players(2)
@@ -83,7 +88,7 @@ def two_pair():
     number_of_two_pair = pb.two_pairs_per_player(players)
     winner = pb.checking_who_won_two_pair_scenario(players, number_of_two_pair)
 
-    return render_template('index.html',
+    return render_template('pair_poker.html',
                            ccimgs=get_card_images(common_cards),
                            p1imgs=p1imgs,
                            p2imgs=p2imgs,
