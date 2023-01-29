@@ -1,9 +1,0 @@
-
-# Ignore three pair 
-{1: ['2H', '9S'], 2: ['jS', '7C']}
-{1: ['2H', '9S', 'qC', 'qH', '9D', '4C', 'qS'], 2: ['jS', '7C', 'qC', 'qH', '9D', '4C', 'qS']}
-
-
-# If no one has two pair, no winners
-{1: ['qC', 'jS'], 2: ['3D', 'qH']}
-{1: ['qC', 'jS', '2S', '8D', 'kS', 'aS', '9C'], 2: ['3D', 'qH', '2S', '8D', 'kS', 'aS', '9C']}
