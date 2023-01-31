@@ -50,7 +50,7 @@ def front_page():
 def pair_poker():
      # Create a deck of cards and 2 players
     deck_of_cards = pb.create_deck_of_cards()
-    players = pb.create_players(2)
+    players = pb.create_players(3)
 
     # Deal two cards each
     for j in range(2):
@@ -59,6 +59,8 @@ def pair_poker():
 
     p1imgs=get_card_images(players[1])
     p2imgs=get_card_images(players[2])
+    p3imgs=get_card_images(players[3])
+
     
     # Burn cards and common cards
     burned_cards = []
@@ -92,6 +94,7 @@ def pair_poker():
                            ccimgs=get_card_images(common_cards),
                            p1imgs=p1imgs,
                            p2imgs=p2imgs,
+                           p3imgs=p3imgs,
                            number_of_two_pair=number_of_two_pair,
                            winner=winner)
 
