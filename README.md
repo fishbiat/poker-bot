@@ -9,6 +9,11 @@ Code for making a Python-based Poker bot, educational purposes only.
 In the main directory run:
 
 ```
+virtualenv env
+source ./env/bin/activate
+```
+
+```
 pip install -r requirements
 ```
 
