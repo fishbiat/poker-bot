@@ -14,7 +14,7 @@ source ./env/bin/activate
 ```
 
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 and 
